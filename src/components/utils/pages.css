@@ -1,38 +1,22 @@
+
+/* ! customized css */
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 * {
 	box-sizing: border-box;
-} 
+}
 
 body {
-  /* margin: 0; */
-  background: #ffffff;
-  display: flex;
+	background: #f3e0e2;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
-  height: 100vh;
+	height: 100vh;
 	margin: -20px 0 50px;
-  width: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-
-.content{
-  display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-  padding: 20px;
-}
-
-.error{
-  color: red;
-  padding-bottom: 10px;
-}
-
-/* ++ for login */
 
 h1 {
 	font-weight: bold;
@@ -59,7 +43,7 @@ a {
 }
 
 button {
-	border-radius: 8px;
+	border-radius: 20px;
 	border: 1px solid #FF4B2B;
 	background-color: #FF4B2B;
 	color: #FFFFFF;
@@ -69,7 +53,6 @@ button {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
-  width: 100%;
 }
 
 form {
