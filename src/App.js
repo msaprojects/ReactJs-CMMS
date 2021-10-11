@@ -1,27 +1,24 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Chat from "./components/pages/chat/chat";
 import Dashboard from "./components/pages/Dashboard/Dashboard";
-import Home from "./components/pages/Home/Home";
 import Login from "./components/pages/Login/Login";
+import PrivateRoute from "./components/utils/PrivateRoute";
+import PublicRoute from "./components/utils/PublicRoute";
 function App() {
   return (
-    <div className="App">
+    // <div className="App">
     <BrowserRouter>
-      <div className='content'>
         <Switch>
           <Route exact path='/'>
             <Login/>
           </Route>
-          <Route exact path='/home'>
-            <Home/>
-          </Route>
-          <Route exact path='/dashboard'>
-            <Dashboard/>
-          </Route>
+          <PublicRoute path='/login' component={ Login }/>
+          <PrivateRoute path='/dashboard' component={ Dashboard }/>
+          <PrivateRoute path='/chat' component={ Chat }/>
         </Switch>
-      </div>
     </BrowserRouter>
-    </div>
+    // </div>
   );
 }
 
