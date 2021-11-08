@@ -29,7 +29,7 @@ const Login = (props) => {
             setUserSession(response.data.data.access_token, response.data.data.username, response.data.data.jabatan)
             console.log("Response? ",response)
             console.log("Response? ",response.data.data.access_token)
-            history.push('/dashboard')
+            // history.push('/dashboard')
         }).catch((error) => {
             setLoading(false)
             setError(error.response.data.message)
