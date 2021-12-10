@@ -29,11 +29,12 @@ const Login = (props) => {
             setUserSession(response.data.data.access_token, response.data.data.username, response.data.data.jabatan)
             console.log("Response? ",response)
             console.log("Response? ",response.data.data.access_token)
-            // history.push('/dashboard')
+            history.push('/dashboard')
         }).catch((error) => {
+            console.log('EROR?',error)
             setLoading(false)
             setError(error.response.data.message)
-            console.log("Error?", error.response.data.message)
+            // console.log("Error?", error.response.data.message)
             history.push('/login')
         })
     }

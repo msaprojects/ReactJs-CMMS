@@ -19,7 +19,7 @@ export default function NavbarHeader(props) {
     localStorage.clear();
     history.push("/signin");
   }
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 //   function onClickShowProfile() {
 //     setIsProfileOpen(() => true);
 //   }

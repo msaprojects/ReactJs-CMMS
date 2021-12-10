@@ -25,11 +25,11 @@ function Chat() {
           "padding-none": !sidebarOpen
         })}
       >
-        <NavbarHeader
+        {/* <NavbarHeader
           setSidebarOpen={setSidebarOpen}
           sidebarOpen={sidebarOpen}
           setIsProfileOpen={setIsProfileOpen}
-        />
+        /> */}
 
         <div
           className={classNames("page-content", {
@@ -38,7 +38,7 @@ function Chat() {
         >
           <div className="chat-content h-100">
             <div className="page-title-box">
-              <h4>CHAT</h4>
+              <h4>CHATxx</h4>
             </div>
             <div className="col-12 col h-100 d-flex flex-column justify-content-space">
               <div className="w-100 messages-box mb-4">
